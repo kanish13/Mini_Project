@@ -1,0 +1,109 @@
+/* Reset for better cross-browser compatibility */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  /* Global styling */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #222; /* Dark background */
+    color: #ddd; /* Off-white text */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Adjust slightly for desired size */
+    font-weight: 400;
+    text-align: center;
+    margin: 2rem 0; /* Adjust based on spacing preference */
+    color: #fff; /* White title */
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1rem; /* Adjust spacing between form elements */
+  }
+  
+  #pdf_form, #text_form {
+    width: 400px; /* Adjust form width if desired */
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  #file-input, #text_query {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background-color: #444;
+    color: #eee;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff; /* Primary blue button */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0069d9; /* Darken primary blue on hover */
+  }
+  
+  /* Text query button (if needed) */
+  #query {
+    margin-top: 1rem;
+  }
+  
+  /* Output (answer) styling */
+  #answer {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #444; /* Dark background for output */
+    color: #eee;
+  }
+  
+  /* History styling */
+  #history {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    overflow-y: auto; /* Make overflow scroll */
+    max-height: 200px; /* Adjust max-height as needed */
+    background-color: #333;
+  }
+  
+  #history > div {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+    padding: 0.5rem;
+    color: #eee;
+  }
+  
+  /* Optional media query for smaller screens */
+  @media (max-width: 768px) {
+    /* Adjust styling for smaller screens here */
+  }
+  
